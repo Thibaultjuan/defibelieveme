@@ -39,6 +39,10 @@ body {
   background-color: #efefef;
 }
 
+a{
+  text-decoration: none;
+}
+
 img,
 video,
 picture {
@@ -64,4 +68,62 @@ h1, h2, h3, h4, h5, p {
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
+}
+
+img, svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+header{
+  background: black;
+  padding: 0.08rem;
+}
+header a {
+  text-decoration: none;
+  font-family: 'nunito-sans';
+  font-size: 1.6em;
+  color: white;
+  font-weight: 300;
+}
+header svg {
+  margin-left: 1.5rem;
+  fill: red;
+}
+
+nav{
+  position: sticky;
+  padding: 1rem;
+}
+
+nav p {
+  font-family: 'nunito-sans';
+  font-weight: 900;
+  font-size: 1.1em;
+}
+
+nav span{
+  color:red;
+}
+
+#coin-bas-droite img
+{
+width: 6rem;
+height: 6rem;
+}
+
+.flex-row {
+  display:flex;
+  justify-content: space-between;
+}
+.liste_horizontal{
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  fill:white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.liste_horizontal svg{
+  fill:white;
 }
