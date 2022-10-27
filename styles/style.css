@@ -21,6 +21,7 @@ html {
   cursor: default;
   scroll-behavior: smooth;
   tab-size: 4;
+  font-family: 'Nunito Sans';
 }
 
 html:focus-within {
@@ -41,6 +42,10 @@ body {
 
 a{
   text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 img,
@@ -69,11 +74,28 @@ h1, h2, h3, h4, h5, p {
   word-wrap: break-word;
   word-break: break-word;
 }
-
-img, svg {
-  width: 2.4rem;
-  height: 2.4rem;
-}
+h1{
+font-size: 2em;
+    font-family: 'Nunito Sans';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: center;
+    color: #7895B2;
+  }
+  h1::before{
+    content: "";
+    flex: 0 1 16rem;
+    border-bottom: 0.2rem solid #7895B2;
+    margin: 0.5em;
+  } 
+  h1::after{
+    content: "";
+    flex: 0 0 16%;
+    border-bottom: 0.2rem solid #7895B2;
+    margin: 0.5em;
+  }  
 header{
   background: black;
   padding: 0.08rem;
@@ -88,12 +110,17 @@ header a {
 header svg {
   margin-left: 1.5rem;
   fill: red;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 nav{
   position: sticky;
+  top: 0rem;
   padding: 1rem;
+  background-color: #d8d6d3;
 }
+
 
 nav p {
   font-family: 'nunito-sans';
@@ -105,16 +132,114 @@ nav span{
   color:red;
 }
 
-#coin-bas-droite img
-{
-width: 6rem;
-height: 6rem;
+section{
+  margin-bottom: 12rem;
+}
+
+main {
+  display: block;
+}
+main svg{
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+#first_block {
+  background: no-repeat bottom url(/assets/images/home-page-header.png);
+  background-color: #d8d6d3;
+  height: 50rem;
+  margin-bottom: 10rem;
+}
+
+#presentation {
+  justify-content: space-evenly;
+  height: 50rem;
+}
+
+#presentation p:nth-of-type(1) {
+  font-size: 1.5em;
+  flex-basis: 30%;
+}
+#presentation p:nth-of-type(2) {
+  flex-basis: 30%;
+}
+#presentation a {
+  color: red;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+
+#crea {
+  align-items: flex-end;
+}
+
+#pres_coin_inf_droite {
+  text-align: center;
+  flex-basis: 35%;
+  align-items: center;
+  font-weight: bold;
+}
+#pres_coin_inf_droite img {
+  width: 6rem;
+}
+
+#aide{
+  gap: 1em;
+  justify-content: left;
+  margin-bottom: 15rem;
+}
+#aide div:nth-of-type(1) {
+  color: red;
+}
+#aide div:nth-of-type(2) {
+  color: yellow;
+}
+#aide div:nth-of-type(3) {
+  color: blue;
+}
+#aide main:last-child {
+  flex-basis: 60%;
+}
+#aide p{
+  font-size: 1.1em;
+}
+#aide svg{
+  fill: currentColor;
+}
+
+#block1{
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 15rem;
+}
+#block1 div:first-child{
+  flex-basis: 60%;
+}
+#block1 div:last-child{
+  flex-basis: 40%;
+}
+#competences{
+  text-align: center;
+}
+
+
+.container {
+  margin: 0 auto;
+  width: 70%;
 }
 
 .flex-row {
   display:flex;
   justify-content: space-between;
 }
+
+.flexbox_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .liste_horizontal{
   display: flex;
   gap: 1rem;
@@ -126,4 +251,24 @@ height: 6rem;
 
 .liste_horizontal svg{
   fill:white;
+}
+.bouton{
+background-color: #010162;
+padding: 0.8em;
+margin: 1rem;
+border-radius: 1rem;
+font-weight: bold;
+font-size: 1.3em;
+gap: 1em;
+justify-content: flex-start;
+}
+.texte{
+  font-size: 1.1em;
+}
+.sousH1{
+  margin-top: 2rem;
+  color: #7895B2;
+  text-align: center;
+  padding-right: 8rem;
+
 }
