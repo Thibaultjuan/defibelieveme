@@ -134,6 +134,7 @@ nav span{
 
 section{
   margin-bottom: 12rem;
+  display: block;
 }
 
 main {
@@ -219,14 +220,71 @@ main svg{
 #block1 div:last-child{
   flex-basis: 40%;
 }
-#competences{
-  text-align: center;
+
+#competences div:first-child{
+  flex-basis: 40%;
+}
+#competences div:last-child{
+  flex-basis: 60%;
 }
 
-
-.container {
+#listeCompetences{
+  width: 60%;
   margin: 0 auto;
-  width: 70%;
+}
+
+#listeCompetences img{
+  width: 2.4rem;
+  height: 2.4rem;
+}
+#listeCompetences h3{
+  margin-bottom: 2rem;
+}
+#listeCompetences h4{
+  color:red;
+}
+#listeCompetences p{
+  font-style: italic;
+}
+#listeCompetences li{
+  justify-content: left;
+  gap: 1em;
+  margin-bottom: 1em;
+  align-items: center;
+}
+
+#icon h3{
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+#comp_dev{
+gap: 3em;
+row-gap: 1em;
+justify-content: space-around;
+margin-right: 15rem;
+margin-bottom: 2em;
+}
+#comp_dev img{
+  width: 5em;
+  justify-content: center;
+}
+#comp_dev li:nth-of-type(6) img{
+  margin-top: 1em;
+  width: 8em;
+}
+#comp_dev li:nth-of-type(7) img{
+  margin-top: 1em;
+}
+#comp_dev li:nth-of-type(13) img{
+  margin-top: 1em;
+  width: 8em;
+}
+#comp_graph{
+  margin-right: 15rem;
+}
+#comp_graph img{
+  width: 2em;
 }
 
 .flex-row {
@@ -238,6 +296,15 @@ main svg{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrap{
+  flex-wrap: wrap;
 }
 
 .liste_horizontal{
@@ -270,5 +337,5 @@ justify-content: flex-start;
   color: #7895B2;
   text-align: center;
   padding-right: 8rem;
-
+  margin-bottom: 2rem;
 }
