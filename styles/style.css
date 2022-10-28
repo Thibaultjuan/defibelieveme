@@ -102,7 +102,7 @@ header{
 }
 header a {
   text-decoration: none;
-  font-family: 'nunito-sans';
+  font-family: 'Nunito Sans';
   font-size: 1.6em;
   color: white;
   font-weight: 300;
@@ -123,7 +123,7 @@ nav{
 
 
 nav p {
-  font-family: 'nunito-sans';
+  font-family: 'Nunito Sans';
   font-weight: 900;
   font-size: 1.1em;
 }
@@ -143,6 +143,38 @@ main {
 main svg{
   width: 2.4rem;
   height: 2.4rem;
+}
+
+
+footer{
+  background: rgb(44, 8, 77);
+  padding: 2em;
+}
+
+footer span{
+  color: green;
+}
+footer main{
+  gap: 2em;
+  align-items: center;
+}
+footer a{
+  color: red;
+  font-size: 1em;
+}
+footer p{
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: 900;
+}
+footer li a{
+  color: purple;
+}
+
+footer p:nth-of-type(1){
+  font-size: 3rem;
+  color:white;
 }
 
 #first_block {
@@ -287,6 +319,88 @@ margin-bottom: 2em;
   width: 2em;
 }
 
+#formationContinue{
+  margin-top: 15rem;
+}
+
+#formationContinue img{
+  width: 2em;
+}
+
+#formations{
+  justify-content: space-between;
+  gap:1em;
+  margin-top: 5rem;
+}
+
+#formations div:nth-of-type(1){
+  flex-basis: 33%;
+}
+
+#formations div:nth-of-type(2){
+  flex-basis: 33%;
+}
+
+#formations div:nth-of-type(3){
+  flex-basis: 33%;
+}
+
+#dlCV{
+  margin-bottom: 15rem;
+}
+#dlCV a{
+  justify-content: center;
+  color: red;
+  font-weight: 900;
+  font-size: 1.4em;
+  gap: 1em;
+  margin-top: 2em;
+}
+#dlCV img{
+  width: 2.4rem;
+}
+
+.boutonBas{
+  background: #011150;
+  border-radius: 3em;
+  padding: 0.8em 1em;
+  color: rgb(165, 165, 241);
+  font-size: 0.8em;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+
+.formation{
+  text-align: center;
+  align-items: center;
+  border: 0.1rem solid grey;
+  border-radius: 0.3rem;
+  gap: 1em;
+}
+.formation p:nth-of-type(2){
+  color:grey;
+  border-bottom: 0.3rem solid black;
+  width: 60%;
+  border-radius: 0.3rem;
+  padding-bottom: 0.5em;
+}
+.formation p:nth-of-type(3){
+  color: rgb(3, 3, 115);
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.formation p:nth-of-type(4){
+  font-weight: bold;
+}
+.formation span{
+  width: 100%;
+  height: 100%;
+  background-color: #c9d3db;
+  flex-basis: 3.5em;
+  border: 0.1rem solid grey;
+}
 .flex-row {
   display:flex;
   justify-content: space-between;
@@ -338,4 +452,28 @@ justify-content: flex-start;
   text-align: center;
   padding-right: 8rem;
   margin-bottom: 2rem;
+}
+
+.projet{
+  margin-top: 5rem;
+}
+
+.projet img{
+  width: 100%;
+  height: 100%;
+}
+
+.projetdes{
+  justify-content: center;
+}
+
+.projetdes p:nth-of-type(3){
+  font-size: 1.5em;
+  margin-bottom: 5rem;
+}
+
+.projetdes a{
+  background:#010162;
+  padding: 1em;
+  color: white;
 }
