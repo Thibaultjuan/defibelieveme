@@ -1,4 +1,9 @@
-
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("/assets/fonts/Nunito-Sans-Regular.ttf") format("ttf"),
+         url("/assets/fonts/Nunito-Sans-Regular.woff") format("woff");
+ }
+ @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 /* petit reset minimal de base */
 *,
 *::before,
@@ -76,24 +81,25 @@ h1, h2, h3, h4, h5, p {
 }
 h1{
 font-size: 2em;
-    font-family: 'Nunito Sans';
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 1rem;
     justify-content: center;
-    color: #7895B2;
+    color: #1e62a7;
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
   }
   h1::before{
     content: "";
     flex: 0 1 16rem;
-    border-bottom: 0.2rem solid #7895B2;
+    border-bottom: 0.2rem solid #1e62a7;
     margin: 0.5em;
   } 
   h1::after{
     content: "";
     flex: 0 0 16%;
-    border-bottom: 0.2rem solid #7895B2;
+    border-bottom: 0.2rem solid #1e62a7;
     margin: 0.5em;
   }  
 header{
@@ -103,7 +109,7 @@ header{
 header a {
   text-decoration: none;
   font-family: 'Nunito Sans';
-  font-size: 1.6em;
+  font-size: 1.5em;
   color: white;
   font-weight: 300;
 }
@@ -112,6 +118,8 @@ header svg {
   fill: red;
   width: 2.4rem;
   height: 2.4rem;
+  margin-right: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 nav{
@@ -125,7 +133,7 @@ nav{
 nav p {
   font-family: 'Nunito Sans';
   font-weight: 900;
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 nav span{
@@ -147,7 +155,7 @@ main svg{
 
 
 footer{
-  background: rgb(44, 8, 77);
+  background: #212E53;
   padding: 2em;
 }
 
@@ -169,7 +177,7 @@ footer p{
   font-weight: 900;
 }
 footer li a{
-  color: purple;
+  color: #9AC8EB;
 }
 
 footer p:nth-of-type(1){
@@ -177,7 +185,7 @@ footer p:nth-of-type(1){
   color:white;
 }
 
-#first_block {
+#pres {
   background: no-repeat bottom url(/assets/images/home-page-header.png);
   background-color: #d8d6d3;
   height: 50rem;
@@ -207,13 +215,13 @@ footer p:nth-of-type(1){
   align-items: flex-end;
 }
 
-#pres_coin_inf_droite {
+#basDroite {
   text-align: center;
   flex-basis: 35%;
   align-items: center;
   font-weight: bold;
 }
-#pres_coin_inf_droite img {
+#basDroite img {
   width: 6rem;
 }
 
@@ -290,32 +298,35 @@ footer p:nth-of-type(1){
   margin-bottom: 1em;
 }
 
-#comp_dev{
+#dev{
 gap: 3em;
 row-gap: 1em;
 justify-content: space-around;
 margin-right: 15rem;
 margin-bottom: 2em;
 }
-#comp_dev img{
+#dev img{
   width: 5em;
   justify-content: center;
 }
-#comp_dev li:nth-of-type(6) img{
+#dev li{
+  list-style-type: none;
+}
+#dev li:nth-of-type(6) img{
   margin-top: 1em;
   width: 8em;
 }
-#comp_dev li:nth-of-type(7) img{
+#dev li:nth-of-type(7) img{
   margin-top: 1em;
 }
-#comp_dev li:nth-of-type(13) img{
+#dev li:nth-of-type(13) img{
   margin-top: 1em;
   width: 8em;
 }
-#comp_graph{
+#graph{
   margin-right: 15rem;
 }
-#comp_graph img{
+#graph img{
   width: 2em;
 }
 
@@ -406,7 +417,7 @@ margin-bottom: 2em;
   justify-content: space-between;
 }
 
-.flexbox_column {
+.flex-col {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -421,7 +432,7 @@ margin-bottom: 2em;
   flex-wrap: wrap;
 }
 
-.liste_horizontal{
+.listeH{
   display: flex;
   gap: 1rem;
   list-style-type: none;
@@ -430,11 +441,12 @@ margin-bottom: 2em;
   font-size: 1.1em;
 }
 
-.liste_horizontal svg{
+.listeH svg{
   fill:white;
 }
 .bouton{
 background-color: #010162;
+border: 0.1rem red solid;
 padding: 0.8em;
 margin: 1rem;
 border-radius: 1rem;
@@ -443,12 +455,12 @@ font-size: 1.3em;
 gap: 1em;
 justify-content: flex-start;
 }
-.texte{
+.txt{
   font-size: 1.1em;
 }
 .sousH1{
   margin-top: 2rem;
-  color: #7895B2;
+  color: #4aa4fe;
   text-align: center;
   padding-right: 8rem;
   margin-bottom: 2rem;
@@ -461,6 +473,8 @@ justify-content: flex-start;
 .projet img{
   width: 100%;
   height: 100%;
+  -webkit-box-shadow: 4px 5px 17px 3px #5C5C5C; 
+  box-shadow: 4px 5px 17px 3px #5C5C5C; 
 }
 
 .projetdes{
