@@ -186,7 +186,7 @@ footer p:nth-of-type(1){
 }
 
 #pres {
-  background: no-repeat bottom url(assets/images/home-page-header.png);
+  background: no-repeat bottom url(./assets/images/home-page-header.png);
   background-color: #d8d6d3;
   height: 50rem;
   margin-bottom: 10rem;
